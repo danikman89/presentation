@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>reveal.js</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/custom.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-background-image="./assets/img/electron-bi.png" style="margin-top: 320px;">
+        <p style="font-size: 26px;">
+          Created by
+          <a href="https://github.com/danikman89" target="_blank">Daniyar Baitenov</a>
+          for
+          <a href="https://rs.school/" target="_blank">RS-SCHOOL</a>
+        </p>
+      </section>
+      <section>
+        <section>
+          <h3>What Electron is?<h3>
+        </section>
+        <section>
+          <ul>
+            <li><strong>Electron</strong> is open-source software framework </li>
+            <li class="fragment">Make Desktop software with <strong>HTML CSS</strong> &
+              <strong>JavaScript</strong></li>
+            <li class="fragment">Combines <strong>Chromium</strong> and <strong>Node.js</strong> into a single
+              runtime
+            </li>
+            <li class="fragment"><strong>Electron</strong> can use <strong>React, Angular</strong> or
+              <strong>Vue</strong> for Desktop
+              Apps</li>
+            <li class="fragment">Apps can be packaged for <strong>Windows, Mac</strong> & <strong>Linux</strong>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Apps built on Electron</h3>
+        </section>
+        <section>
+          <div>
+            <img src="./assets/img/appsElectron.png" alt="electronJS-apps">
+          </div>
+          <p style="font-size: 32px;">
+            For more:
+            <a href="https://www.electronjs.org/apps">https://www.electronjs.org/apps</a>
+          </p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Main process & Render process</h3>
+        </section>
+        <section>
+          <ul>
+            <li><strong>Main Process</strong> - creates <strong>Browser Window</strong> instances to run web pages</li>
+            <li class="fragment"><strong>Render Process</strong> - each webpage runs its own isolated process called the
+              render process
+            </li>
+          </ul>
+        </section>
+        <section>
+          <img src="./assets/img/process.png" alt="electron-process" style="background: transparent;">
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Advantages of using Electron</h3>
+        </section>
+        <section>
+          <ul>
+            <li>Work on all platforms, including Linux</li>
+            <li class="fragment">Low barrier to entry</li>
+            <li class="fragment">A large community of developers and users</li>
+            <li class="fragment">Automatic updates</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Disadvantages of using Electron</h3>
+        </section>
+        <section>
+          <ul>
+            <li>Each application comes with an entire runtime environment</li>
+            <li class="fragment">Some applications are of poor quality</li>
+            <li class="fragment">Large download sizes</li>
+            <li class="fragment">High memory usage</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h3>Conclusion</h3>
+        </section>
+        <section>
+          <img src="./assets/img/conclusion.png" alt="electron">
+        </section>
+      </section>
+      <section>
+        <h3>Thank you for your attention!</h3>
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+  </script>
+</body>
+
+</html>
